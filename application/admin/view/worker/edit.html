@@ -1,0 +1,191 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Amaze UI Admin index Examples</title>
+    <meta name="description" content="这是一个 index 页面">
+    <meta name="keywords" content="index">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="Cache-Control" content="no-siteapp" />
+    <link rel="icon" type="image/png" href="__PUBLIC__/assets/i/favicon.png">
+    <link rel="apple-touch-icon-precomposed" href="__PUBLIC__/assets/i/app-icon72x72@2x.png">
+    <meta name="apple-mobile-web-app-title" content="Amaze UI" />
+    <link rel="stylesheet" href="__PUBLIC__/assets/css/amazeui.min.css" />
+    <link rel="stylesheet" href="__PUBLIC__/assets/css/admin.css">
+    <link rel="stylesheet" href="__PUBLIC__/assets/css/app.css">
+</head>
+
+<body data-type="generalComponents">
+
+
+  {include file="public/top" /}
+    <div class="tpl-page-container tpl-page-header-fixed">
+
+{include file="public/left" /}
+
+
+        <div class="tpl-content-wrapper">
+            <div class="tpl-content-page-title">
+                员工信息管理表单
+            </div>
+            <ol class="am-breadcrumb">
+                <li><a href="#" class="am-icon-home">首页</a></li>
+                <li><a href="#">表单</a></li>
+                <li class="am-active">员工信息管理 表单</li>
+            </ol>
+            <div class="tpl-portlet-components">
+                <div class="portlet-title">
+                    <div class="caption font-green bold">
+                        <span class="am-icon-code"></span> 表单
+                    </div>
+                    <div class="tpl-portlet-input tpl-fz-ml">
+                        <div class="portlet-input input-small input-inline">
+                            <div class="input-icon right">
+                                <i class="am-icon-search"></i>
+                                <input type="text" class="form-control form-control-solid" placeholder="搜索..."> </div>
+                        </div>
+                    </div>
+
+
+                </div>
+
+                <div class="tpl-block">
+
+                    <div class="am-g">
+                        <div class="tpl-form-body tpl-form-line">
+                            <form class="am-form tpl-form-line-form" action="" method="post" enctype="multipart/form-data">
+                                <div class="am-form-group">
+                                    <label for="user-name" class="am-u-sm-3 am-form-label">用户名 <span class="tpl-form-line-small-title">username</span></label>
+                                    <div class="am-u-sm-9">
+                                        <input type="text" class="tpl-form-input" id="user-name" name="username" placeholder="请输入用户名" value="{$tab.gl_user}" >
+                                        
+                                    </div>
+                                </div>
+
+                                <div class="am-form-group">
+                                    <label for="user-email" class="am-u-sm-3 am-form-label">密码 <span class="tpl-form-line-small-title">Password</span></label>
+                                    <div class="am-u-sm-9">
+                                        <input type="Password" class="am-form-field tpl-form-no-bg" placeholder="请输入密码" name="password"  >
+                                        <small>密码要复杂一些哦</small>
+                                    </div>
+                                </div>
+                                 <div class="am-form-group">
+                                    <label for="user-email" class="am-u-sm-3 am-form-label">重复密码 <span class="tpl-form-line-small-title">Password</span></label>
+                                    <div class="am-u-sm-9">
+                                        <input type="Password" class="am-form-field tpl-form-no-bg" placeholder="请再输入密码" name="password2">
+                                        <small>密码要和第一次的一致哦</small>
+                                    </div>
+                                </div>
+                                <div class="am-form-group">
+                                    <label for="user-phone" class="am-u-sm-3 am-form-label">管理等级 <span class="tpl-form-line-small-title">Grade</span></label>
+                                    <div class="am-u-sm-9">
+                                        <select  name="grade" data-am-selected="{searchBox: 1}">
+                                          <?php for ($i=0;$i<9;$i++){ ?>
+                                                <option  value="M<?php echo $i;?>" >M<?php echo $i;?></option>
+                                            <?php   } ?>
+                                        </select>
+                                    </div>
+                                </div>
+
+                                <div class="am-form-group">
+                                    <label class="am-u-sm-3 am-form-label">管理员姓名 <span class="tpl-form-line-small-title">Name</span></label>
+                                    <div class="am-u-sm-9">
+                                        <input type="text" name="name" value="{$tab.gl_name}" placeholder="输入真实姓名">
+                                    </div>
+                                </div>
+                                <div class="am-form-group">
+                                    <label class="am-u-sm-3 am-form-label">所属部门ID <span class="tpl-form-line-small-title">Department</span></label>
+                                    <div class="am-u-sm-9">
+                                        <input type="text" name="bn_id"value="{$tab.bn_id}" >
+                                    </div>
+                                </div>
+                                <div class="am-form-group">
+                                    <label for="user-weibo" class="am-u-sm-3 am-form-label">证照图 <span class="tpl-form-line-small-title">Images</span></label>
+                                    <div class="am-u-sm-9">
+                                        <div class="am-form-group am-form-file">
+                                            <div class="tpl-form-file-img">
+                                                <img id="preview" src="/property/public{$tab.gl_picture}" alt="">
+                                            </div>
+                                            <button type="button" class="am-btn am-btn-danger am-btn-sm">
+                                    <i class="am-icon-cloud-upload"></i> 添加证照图片</button>
+                                            <input id="doc-form-file" type="file" multiple name="file" onchange="imgPreview(this)" >
+                                        </div>
+
+                                    </div>
+                                </div>
+                           `        <div class="am-form-group">
+                                    <label for="user-phone" class="am-u-sm-3 am-form-label">上岗日期 <span class="tpl-form-line-small-title">/ Data</span></label>
+                                    <div class="am-u-sm-9">
+                                        <select data-am-selected="{searchBox: 1,maxHeight:250} " name="home_date_y" disabled="true" >
+                                              <option value="{$tab.gl_date.0}">{$tab.gl_date.0}</option>
+                                            </select>年
+                                           <select data-am-selected="{searchBox: 1,maxHeight:250} " name="home_date_m" disabled="true" >
+                                              <option value="{$tab.gl_date.1}">{$tab.gl_date.1}</option>
+                                            </select>月
+                                          <select data-am-selected="{searchBox: 1,maxHeight:250}" name="home_date_d" disabled="true" >
+                                              <option value="{$tab.gl_date.2}">{$tab.gl_date.2}</option>
+                                            </select>日
+                                    </div>
+
+                                </div>
+                                <div class="am-form-group">
+                                    <label for="user-phone" class="am-u-sm-3 am-form-label">电话 / Telephone</label>
+                                    <div class="am-u-sm-9">
+                                        <input type="tel"  name="phone"  placeholder="输入你的电话号码 / Telephone" value="{$tab.gl_call}" >
+                                    </div>
+                                </div>
+                                <div class="am-form-group">
+                                    <label for="user-weibo" class="am-u-sm-3 am-form-label">家庭住址 <span class="tpl-form-line-small-title">Adress</span></label>
+                                    <div class="am-u-sm-9">
+                                        <input type="text" id="user-weibo" name="adress" placeholder="请详细到门牌号" value="{$tab.gl_adress}" >
+                                        <div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="am-form-group">
+                                    <label for="user-intro" class="am-u-sm-3 am-form-label">备注内容</label>
+                                    <div class="am-u-sm-9">
+                                        <textarea name="note" class="" rows="10" id="user-intro" placeholder="请输入备注内容">{$tab.gl_note}</textarea>
+                                    </div>
+                                </div>
+
+                                <div class="am-form-group">
+                                    <div class="am-u-sm-9 am-u-sm-push-3">
+                                        <button type="submit" class="am-btn am-btn-primary tpl-btn-bg-color-success ">保存修改</button>
+                                    </div>
+                                </div>
+                            </form>
+
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+
+
+
+
+
+
+
+
+
+
+        </div>
+
+    </div>
+
+
+    <script src="__PUBLIC__/assets/js/jquery-2.1.1.js"></script>
+    <script src="__PUBLIC__/assets/js/amazeui.min.js"></script>
+    <script src="__PUBLIC__/assets/js/app.js"></script>
+    <script src="__PUBLIC__/assets/js/update.js"></script>
+    <script src="__PUBLIC__/assets/js/update2.js"></script>
+	
+</body>
+</html>

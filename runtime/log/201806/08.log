@@ -1,0 +1,806 @@
+---------------------------------------------------------------
+[ 2018-06-08T12:36:11+08:00 ] 0.0.0.0 GET /property/public/admin/Information/add
+[ info ] localhost/property/public/admin/Information/add [运行时间：0.067554s][吞吐率：14.80req/s] [内存消耗：2,368.33kb] [文件加载：52]
+[ info ] [ LANG ] D:\wamp64\www\property\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Information',
+    2 => 'add',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.7 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'UM_distinctid=163d03259c81c2-020bedf9277a45-7c153a4a-15f900-163d03259ca134; CNZZDATA681872=cnzz_eid%3D24272955-1528202079-%26ntime%3D1528358269',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ VIEW ] D:\wamp64\www\property\thinkphp\tpl\dispatch_jump.tpl [ array (
+  0 => 'code',
+  1 => 'msg',
+  2 => 'data',
+  3 => 'url',
+  4 => 'wait',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-06-08T12:36:14+08:00 ] 0.0.0.0 GET /property/public/admin/login/index.html
+[ info ] localhost/property/public/admin/login/index.html [运行时间：0.092796s][吞吐率：10.78req/s] [内存消耗：2,250.54kb] [文件加载：50]
+[ info ] [ LANG ] D:\wamp64\www\property\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'login',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.7 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://localhost/property/public/admin/Information/add',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'UM_distinctid=163d03259c81c2-020bedf9277a45-7c153a4a-15f900-163d03259ca134; CNZZDATA681872=cnzz_eid%3D24272955-1528202079-%26ntime%3D1528358269; PHPSESSID=rp0vtommg20lui3rqpgp7mi037',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Login->index[ D:\wamp64\www\property\application\admin\controller\Login.php ]
+[ info ] [ VIEW ] D:\wamp64\www\property\public/../application/admin\view\login\login.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-06-08T12:36:16+08:00 ] 0.0.0.0 POST /property/public/admin/login/index.html
+[ info ] localhost/property/public/admin/login/index.html [运行时间：0.165127s][吞吐率：6.06req/s] [内存消耗：3,598.94kb] [文件加载：58]
+[ info ] [ LANG ] D:\wamp64\www\property\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'login',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'content-length' => '30',
+  'cache-control' => 'max-age=0',
+  'origin' => 'http://localhost',
+  'upgrade-insecure-requests' => '1',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.7 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://localhost/property/public/admin/login/index.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'thinkphp_show_page_trace=0|0; UM_distinctid=163d03259c81c2-020bedf9277a45-7c153a4a-15f900-163d03259ca134; CNZZDATA681872=cnzz_eid%3D24272955-1528202079-%26ntime%3D1528358269; PHPSESSID=rp0vtommg20lui3rqpgp7mi037',
+)
+[ info ] [ PARAM ] array (
+  'username' => 'admin',
+  'password' => '123456',
+)
+[ info ] [ RUN ] app\admin\controller\Login->index[ D:\wamp64\www\property\application\admin\controller\Login.php ]
+[ info ] [ DB ] INIT sqlsrv
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ VIEW ] D:\wamp64\www\property\thinkphp\tpl\dispatch_jump.tpl [ array (
+  0 => 'code',
+  1 => 'msg',
+  2 => 'data',
+  3 => 'url',
+  4 => 'wait',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010974s ] sqlsrv:Database=property;Server=127.0.0.1,1433
+[ sql ] [ SQL ] SELECT   column_name,   data_type,   column_default,   is_nullable
+        FROM    information_schema.tables AS t
+        JOIN    information_schema.columns AS c
+        ON  t.table_catalog = c.table_catalog
+        AND t.table_schema  = c.table_schema
+        AND t.table_name    = c.table_name
+        WHERE   t.table_name = 'gl' [ RunTime:0.018245s ]
+[ sql ] [ SQL ] SELECT column_name FROM information_schema.key_column_usage WHERE table_name='gl' [ RunTime:0.033944s ]
+[ sql ] [ SQL ] SELECT T1.* FROM (SELECT thinkphp.*, ROW_NUMBER() OVER ( ORDER BY rand()) AS ROW_NUMBER FROM (SELECT  * FROM [gl] WHERE  [gl_user] = 'admin') AS thinkphp) AS T1 WHERE (T1.ROW_NUMBER BETWEEN 1 AND 1) [ RunTime:0.001855s ]
+---------------------------------------------------------------
+[ 2018-06-08T12:36:19+08:00 ] 0.0.0.0 GET /property/public/admin/index/index.html
+[ info ] localhost/property/public/admin/index/index.html [运行时间：0.098305s][吞吐率：10.17req/s] [内存消耗：2,630.55kb] [文件加载：54]
+[ info ] [ LANG ] D:\wamp64\www\property\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.7 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://localhost/property/public/admin/login/index.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'UM_distinctid=163d03259c81c2-020bedf9277a45-7c153a4a-15f900-163d03259ca134; CNZZDATA681872=cnzz_eid%3D24272955-1528202079-%26ntime%3D1528358269; PHPSESSID=rp0vtommg20lui3rqpgp7mi037',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Index->index[ D:\wamp64\www\property\application\admin\controller\Index.php ]
+[ info ] [ VIEW ] D:\wamp64\www\property\public/../application/admin\view\index\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-06-08T12:36:26+08:00 ] 0.0.0.0 GET /property/public/admin/worker/add
+[ info ] localhost/property/public/admin/worker/add [运行时间：0.065219s][吞吐率：15.33req/s] [内存消耗：2,418.13kb] [文件加载：52]
+[ info ] [ LANG ] D:\wamp64\www\property\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'worker',
+    2 => 'add',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.7 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'UM_distinctid=163d03259c81c2-020bedf9277a45-7c153a4a-15f900-163d03259ca134; CNZZDATA681872=cnzz_eid%3D24272955-1528202079-%26ntime%3D1528358269; PHPSESSID=rp0vtommg20lui3rqpgp7mi037',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Worker->Add[ D:\wamp64\www\property\application\admin\controller\Worker.php ]
+[ info ] [ VIEW ] D:\wamp64\www\property\public/../application/admin\view\worker\add.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-06-08T12:36:29+08:00 ] 0.0.0.0 GET /property/public/admin/worker/index.html
+[ info ] localhost/property/public/admin/worker/index.html [运行时间：0.110214s][吞吐率：9.07req/s] [内存消耗：3,466.83kb] [文件加载：59]
+[ info ] [ LANG ] D:\wamp64\www\property\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'worker',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.7 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://localhost/property/public/admin/worker/add',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'thinkphp_show_page_trace=0|0; UM_distinctid=163d03259c81c2-020bedf9277a45-7c153a4a-15f900-163d03259ca134; CNZZDATA681872=cnzz_eid%3D24272955-1528202079-%26ntime%3D1528358269; PHPSESSID=rp0vtommg20lui3rqpgp7mi037',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Worker->Index[ D:\wamp64\www\property\application\admin\controller\Worker.php ]
+[ info ] [ DB ] INIT sqlsrv
+[ info ] [ VIEW ] D:\wamp64\www\property\public/../application/admin\view\worker\lst.html [ array (
+  0 => 'gl',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000177s ] sqlsrv:Database=property;Server=127.0.0.1,1433
+[ sql ] [ SQL ] SELECT   column_name,   data_type,   column_default,   is_nullable
+        FROM    information_schema.tables AS t
+        JOIN    information_schema.columns AS c
+        ON  t.table_catalog = c.table_catalog
+        AND t.table_schema  = c.table_schema
+        AND t.table_name    = c.table_name
+        WHERE   t.table_name = 'gl' [ RunTime:0.000645s ]
+[ sql ] [ SQL ] SELECT column_name FROM information_schema.key_column_usage WHERE table_name='gl' [ RunTime:0.000454s ]
+[ sql ] [ SQL ] SELECT T1.* FROM (SELECT thinkphp.*, ROW_NUMBER() OVER ( ORDER BY rand()) AS ROW_NUMBER FROM (SELECT  COUNT(*) AS tp_count FROM [gl] [a] LEFT JOIN [bn] [c] ON [c].[bn_id]=[a].[bn_id]) AS thinkphp) AS T1 WHERE (T1.ROW_NUMBER BETWEEN 1 AND 1) [ RunTime:0.001806s ]
+[ sql ] [ SQL ] SELECT T1.* FROM (SELECT thinkphp.*, ROW_NUMBER() OVER ( ORDER BY rand()) AS ROW_NUMBER FROM (SELECT  [a].[gl_user],[a].[gl_id],[a].[gl_pwd],[a].[gl_p],[a].[gl_name],[a].[gl_date],[a].[gl_call],[a].[gl_adress],[a].[gl_note],[a].[time],[c].[bn_name] FROM [gl] [a] LEFT JOIN [bn] [c] ON [c].[bn_id]=[a].[bn_id]) AS thinkphp) AS T1 WHERE (T1.ROW_NUMBER BETWEEN 0 + 1 AND 0 + 10) [ RunTime:0.002147s ]
+---------------------------------------------------------------
+[ 2018-06-08T12:36:33+08:00 ] 0.0.0.0 GET /property/public/admin/worker/see/id/5.html
+[ info ] localhost/property/public/admin/worker/see/id/5.html [运行时间：0.093794s][吞吐率：10.66req/s] [内存消耗：3,325.14kb] [文件加载：57]
+[ info ] [ LANG ] D:\wamp64\www\property\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'worker',
+    2 => 'see',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.7 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://localhost/property/public/admin/worker/index.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'thinkphp_show_page_trace=0|0; UM_distinctid=163d03259c81c2-020bedf9277a45-7c153a4a-15f900-163d03259ca134; CNZZDATA681872=cnzz_eid%3D24272955-1528202079-%26ntime%3D1528358269; PHPSESSID=rp0vtommg20lui3rqpgp7mi037',
+)
+[ info ] [ PARAM ] array (
+  'id' => '5',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Worker->See[ D:\wamp64\www\property\application\admin\controller\Worker.php ]
+[ info ] [ DB ] INIT sqlsrv
+[ info ] [ VIEW ] D:\wamp64\www\property\public/../application/admin\view\worker\see.html [ array (
+  0 => 'line',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000167s ] sqlsrv:Database=property;Server=127.0.0.1,1433
+[ sql ] [ SQL ] SELECT   column_name,   data_type,   column_default,   is_nullable
+        FROM    information_schema.tables AS t
+        JOIN    information_schema.columns AS c
+        ON  t.table_catalog = c.table_catalog
+        AND t.table_schema  = c.table_schema
+        AND t.table_name    = c.table_name
+        WHERE   t.table_name = 'gl' [ RunTime:0.000690s ]
+[ sql ] [ SQL ] SELECT column_name FROM information_schema.key_column_usage WHERE table_name='gl' [ RunTime:0.001429s ]
+[ sql ] [ SQL ] SELECT T1.* FROM (SELECT thinkphp.*, ROW_NUMBER() OVER ( ORDER BY rand()) AS ROW_NUMBER FROM (SELECT  * FROM [gl] WHERE  [gl_id] = 5) AS thinkphp) AS T1 WHERE (T1.ROW_NUMBER BETWEEN 1 AND 1) [ RunTime:0.001836s ]
+---------------------------------------------------------------
+[ 2018-06-08T12:39:59+08:00 ] 0.0.0.0 GET /property/public/admin/worker/see/id/5.html
+[ info ] localhost/property/public/admin/worker/see/id/5.html [运行时间：0.148812s][吞吐率：6.72req/s] [内存消耗：3,250.19kb] [文件加载：59]
+[ info ] [ LANG ] D:\wamp64\www\property\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'worker',
+    2 => 'see',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.7 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://localhost/property/public/admin/worker/index.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; UM_distinctid=163d03259c81c2-020bedf9277a45-7c153a4a-15f900-163d03259ca134; CNZZDATA681872=cnzz_eid%3D24272955-1528202079-%26ntime%3D1528358269; PHPSESSID=rp0vtommg20lui3rqpgp7mi037',
+)
+[ info ] [ PARAM ] array (
+  'id' => '5',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Worker->See[ D:\wamp64\www\property\application\admin\controller\Worker.php ]
+[ info ] [ DB ] INIT sqlsrv
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.009017s ] sqlsrv:Database=property;Server=127.0.0.1,1433
+[ sql ] [ SQL ] SELECT   column_name,   data_type,   column_default,   is_nullable
+        FROM    information_schema.tables AS t
+        JOIN    information_schema.columns AS c
+        ON  t.table_catalog = c.table_catalog
+        AND t.table_schema  = c.table_schema
+        AND t.table_name    = c.table_name
+        WHERE   t.table_name = 'gl' [ RunTime:0.024768s ]
+[ sql ] [ SQL ] SELECT column_name FROM information_schema.key_column_usage WHERE table_name='gl' [ RunTime:0.037036s ]
+[ error ] [10501]SQLSTATE[42000]: [Microsoft][ODBC Driver 11 for SQL Server][SQL Server]列名 'gl_id' 不明确。[D:\wamp64\www\property\thinkphp\library\think\db\Connection.php:388]
+---------------------------------------------------------------
+[ 2018-06-08T12:41:30+08:00 ] 0.0.0.0 GET /property/public/admin/worker/see/id/5.html
+[ info ] localhost/property/public/admin/worker/see/id/5.html [运行时间：0.155232s][吞吐率：6.44req/s] [内存消耗：3,554.65kb] [文件加载：63]
+[ info ] [ LANG ] D:\wamp64\www\property\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'worker',
+    2 => 'see',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.7 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://localhost/property/public/admin/worker/index.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; UM_distinctid=163d03259c81c2-020bedf9277a45-7c153a4a-15f900-163d03259ca134; CNZZDATA681872=cnzz_eid%3D24272955-1528202079-%26ntime%3D1528358269; PHPSESSID=rp0vtommg20lui3rqpgp7mi037',
+)
+[ info ] [ PARAM ] array (
+  'id' => '5',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Worker->See[ D:\wamp64\www\property\application\admin\controller\Worker.php ]
+[ info ] [ DB ] INIT sqlsrv
+[ info ] [ VIEW ] D:\wamp64\www\property\public/../application/admin\view\worker\see.html [ array (
+  0 => 'line',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.008699s ] sqlsrv:Database=property;Server=127.0.0.1,1433
+[ sql ] [ SQL ] SELECT   column_name,   data_type,   column_default,   is_nullable
+        FROM    information_schema.tables AS t
+        JOIN    information_schema.columns AS c
+        ON  t.table_catalog = c.table_catalog
+        AND t.table_schema  = c.table_schema
+        AND t.table_name    = c.table_name
+        WHERE   t.table_name = 'gl' [ RunTime:0.017715s ]
+[ sql ] [ SQL ] SELECT column_name FROM information_schema.key_column_usage WHERE table_name='gl' [ RunTime:0.046562s ]
+[ sql ] [ SQL ] SELECT T1.* FROM (SELECT thinkphp.*, ROW_NUMBER() OVER ( ORDER BY rand()) AS ROW_NUMBER FROM (SELECT  [a].[gl_id],[a].[gl_user],[a].[gl_pwd],[a].[gl_p],[a].[gl_name],[a].[gl_date],[a].[gl_call],[a].[gl_adress],[a].[gl_note],[a].[time],[c].[bn_name] FROM [gl] [a] LEFT JOIN [bn] [c] ON [c].[bn_id]=[a].[bn_id] WHERE  [a].[gl_id] = '5') AS thinkphp) AS T1 WHERE (T1.ROW_NUMBER BETWEEN 1 AND 1) [ RunTime:0.002173s ]
+[ error ] [8]未定义数组索引: gl_picture[D:\wamp64\www\property\runtime\temp\bbd708ebabad7aade7227cb05f4046a0.php:407]
+---------------------------------------------------------------
+[ 2018-06-08T12:41:32+08:00 ] 0.0.0.0 GET /property/public/admin/worker/see/id/5.html
+[ info ] localhost/property/public/admin/worker/see/id/5.html [运行时间：0.092716s][吞吐率：10.79req/s] [内存消耗：3,340.97kb] [文件加载：61]
+[ info ] [ LANG ] D:\wamp64\www\property\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'worker',
+    2 => 'see',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.7 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://localhost/property/public/admin/worker/index.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; UM_distinctid=163d03259c81c2-020bedf9277a45-7c153a4a-15f900-163d03259ca134; CNZZDATA681872=cnzz_eid%3D24272955-1528202079-%26ntime%3D1528358269; PHPSESSID=rp0vtommg20lui3rqpgp7mi037',
+)
+[ info ] [ PARAM ] array (
+  'id' => '5',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Worker->See[ D:\wamp64\www\property\application\admin\controller\Worker.php ]
+[ info ] [ DB ] INIT sqlsrv
+[ info ] [ VIEW ] D:\wamp64\www\property\public/../application/admin\view\worker\see.html [ array (
+  0 => 'line',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000269s ] sqlsrv:Database=property;Server=127.0.0.1,1433
+[ sql ] [ SQL ] SELECT   column_name,   data_type,   column_default,   is_nullable
+        FROM    information_schema.tables AS t
+        JOIN    information_schema.columns AS c
+        ON  t.table_catalog = c.table_catalog
+        AND t.table_schema  = c.table_schema
+        AND t.table_name    = c.table_name
+        WHERE   t.table_name = 'gl' [ RunTime:0.000985s ]
+[ sql ] [ SQL ] SELECT column_name FROM information_schema.key_column_usage WHERE table_name='gl' [ RunTime:0.000443s ]
+[ sql ] [ SQL ] SELECT T1.* FROM (SELECT thinkphp.*, ROW_NUMBER() OVER ( ORDER BY rand()) AS ROW_NUMBER FROM (SELECT  [a].[gl_id],[a].[gl_user],[a].[gl_pwd],[a].[gl_p],[a].[gl_name],[a].[gl_date],[a].[gl_call],[a].[gl_adress],[a].[gl_note],[a].[time],[c].[bn_name] FROM [gl] [a] LEFT JOIN [bn] [c] ON [c].[bn_id]=[a].[bn_id] WHERE  [a].[gl_id] = '5') AS thinkphp) AS T1 WHERE (T1.ROW_NUMBER BETWEEN 1 AND 1) [ RunTime:0.000484s ]
+[ error ] [8]未定义数组索引: gl_picture[D:\wamp64\www\property\runtime\temp\bbd708ebabad7aade7227cb05f4046a0.php:407]
+---------------------------------------------------------------
+[ 2018-06-08T12:41:59+08:00 ] 0.0.0.0 GET /property/public/admin/worker/see/id/5.html
+[ info ] localhost/property/public/admin/worker/see/id/5.html [运行时间：0.070488s][吞吐率：14.19req/s] [内存消耗：3,325.45kb] [文件加载：57]
+[ info ] [ LANG ] D:\wamp64\www\property\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'worker',
+    2 => 'see',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.7 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://localhost/property/public/admin/worker/index.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; UM_distinctid=163d03259c81c2-020bedf9277a45-7c153a4a-15f900-163d03259ca134; CNZZDATA681872=cnzz_eid%3D24272955-1528202079-%26ntime%3D1528358269; PHPSESSID=rp0vtommg20lui3rqpgp7mi037',
+)
+[ info ] [ PARAM ] array (
+  'id' => '5',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Worker->See[ D:\wamp64\www\property\application\admin\controller\Worker.php ]
+[ info ] [ DB ] INIT sqlsrv
+[ info ] [ VIEW ] D:\wamp64\www\property\public/../application/admin\view\worker\see.html [ array (
+  0 => 'line',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000180s ] sqlsrv:Database=property;Server=127.0.0.1,1433
+[ sql ] [ SQL ] SELECT   column_name,   data_type,   column_default,   is_nullable
+        FROM    information_schema.tables AS t
+        JOIN    information_schema.columns AS c
+        ON  t.table_catalog = c.table_catalog
+        AND t.table_schema  = c.table_schema
+        AND t.table_name    = c.table_name
+        WHERE   t.table_name = 'gl' [ RunTime:0.001351s ]
+[ sql ] [ SQL ] SELECT column_name FROM information_schema.key_column_usage WHERE table_name='gl' [ RunTime:0.000678s ]
+[ sql ] [ SQL ] SELECT T1.* FROM (SELECT thinkphp.*, ROW_NUMBER() OVER ( ORDER BY rand()) AS ROW_NUMBER FROM (SELECT  [a].[gl_id],[a].[gl_user],[a].[gl_pwd],[a].[gl_p],[a].[gl_name],[a].[gl_date],[a].[gl_call],[a].[gl_picture],[a].[gl_adress],[a].[gl_note],[a].[time],[c].[bn_name] FROM [gl] [a] LEFT JOIN [bn] [c] ON [c].[bn_id]=[a].[bn_id] WHERE  [a].[gl_id] = '5') AS thinkphp) AS T1 WHERE (T1.ROW_NUMBER BETWEEN 1 AND 1) [ RunTime:0.002070s ]
+---------------------------------------------------------------
+[ 2018-06-08T12:42:23+08:00 ] 0.0.0.0 GET /property/public/admin/worker/see/id/5.html
+[ info ] localhost/property/public/admin/worker/see/id/5.html [运行时间：0.141116s][吞吐率：7.09req/s] [内存消耗：3,539.13kb] [文件加载：59]
+[ info ] [ LANG ] D:\wamp64\www\property\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'worker',
+    2 => 'see',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.7 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://localhost/property/public/admin/worker/index.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; UM_distinctid=163d03259c81c2-020bedf9277a45-7c153a4a-15f900-163d03259ca134; CNZZDATA681872=cnzz_eid%3D24272955-1528202079-%26ntime%3D1528358269; PHPSESSID=rp0vtommg20lui3rqpgp7mi037',
+)
+[ info ] [ PARAM ] array (
+  'id' => '5',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Worker->See[ D:\wamp64\www\property\application\admin\controller\Worker.php ]
+[ info ] [ DB ] INIT sqlsrv
+[ info ] [ VIEW ] D:\wamp64\www\property\public/../application/admin\view\worker\see.html [ array (
+  0 => 'line',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000185s ] sqlsrv:Database=property;Server=127.0.0.1,1433
+[ sql ] [ SQL ] SELECT   column_name,   data_type,   column_default,   is_nullable
+        FROM    information_schema.tables AS t
+        JOIN    information_schema.columns AS c
+        ON  t.table_catalog = c.table_catalog
+        AND t.table_schema  = c.table_schema
+        AND t.table_name    = c.table_name
+        WHERE   t.table_name = 'gl' [ RunTime:0.017993s ]
+[ sql ] [ SQL ] SELECT column_name FROM information_schema.key_column_usage WHERE table_name='gl' [ RunTime:0.045041s ]
+[ sql ] [ SQL ] SELECT T1.* FROM (SELECT thinkphp.*, ROW_NUMBER() OVER ( ORDER BY rand()) AS ROW_NUMBER FROM (SELECT  [a].[gl_id],[a].[gl_user],[a].[gl_pwd],[a].[gl_p],[a].[gl_name],[a].[gl_date],[a].[gl_call],[a].[gl_picture],[a].[gl_adress],[a].[gl_note],[a].[time],[c].[bn_name] FROM [gl] [a] LEFT JOIN [bn] [c] ON [c].[bn_id]=[a].[bn_id] WHERE  [a].[gl_id] = '5') AS thinkphp) AS T1 WHERE (T1.ROW_NUMBER BETWEEN 1 AND 1) [ RunTime:0.002228s ]
+---------------------------------------------------------------
+[ 2018-06-08T12:42:29+08:00 ] 0.0.0.0 GET /property/public/admin/worker/index.html
+[ info ] localhost/property/public/admin/worker/index.html [运行时间：0.091604s][吞吐率：10.92req/s] [内存消耗：3,468.20kb] [文件加载：59]
+[ info ] [ LANG ] D:\wamp64\www\property\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'worker',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.7 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://localhost/property/public/admin/worker/add',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'thinkphp_show_page_trace=0|0; UM_distinctid=163d03259c81c2-020bedf9277a45-7c153a4a-15f900-163d03259ca134; CNZZDATA681872=cnzz_eid%3D24272955-1528202079-%26ntime%3D1528358269; PHPSESSID=rp0vtommg20lui3rqpgp7mi037',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Worker->Index[ D:\wamp64\www\property\application\admin\controller\Worker.php ]
+[ info ] [ DB ] INIT sqlsrv
+[ info ] [ VIEW ] D:\wamp64\www\property\public/../application/admin\view\worker\lst.html [ array (
+  0 => 'gl',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000164s ] sqlsrv:Database=property;Server=127.0.0.1,1433
+[ sql ] [ SQL ] SELECT   column_name,   data_type,   column_default,   is_nullable
+        FROM    information_schema.tables AS t
+        JOIN    information_schema.columns AS c
+        ON  t.table_catalog = c.table_catalog
+        AND t.table_schema  = c.table_schema
+        AND t.table_name    = c.table_name
+        WHERE   t.table_name = 'gl' [ RunTime:0.000632s ]
+[ sql ] [ SQL ] SELECT column_name FROM information_schema.key_column_usage WHERE table_name='gl' [ RunTime:0.000418s ]
+[ sql ] [ SQL ] SELECT T1.* FROM (SELECT thinkphp.*, ROW_NUMBER() OVER ( ORDER BY rand()) AS ROW_NUMBER FROM (SELECT  COUNT(*) AS tp_count FROM [gl] [a] LEFT JOIN [bn] [c] ON [c].[bn_id]=[a].[bn_id]) AS thinkphp) AS T1 WHERE (T1.ROW_NUMBER BETWEEN 1 AND 1) [ RunTime:0.001575s ]
+[ sql ] [ SQL ] SELECT T1.* FROM (SELECT thinkphp.*, ROW_NUMBER() OVER ( ORDER BY rand()) AS ROW_NUMBER FROM (SELECT  [a].[gl_user],[a].[gl_id],[a].[gl_pwd],[a].[gl_p],[a].[gl_name],[a].[gl_date],[a].[gl_call],[a].[gl_adress],[a].[gl_note],[a].[time],[c].[bn_name] FROM [gl] [a] LEFT JOIN [bn] [c] ON [c].[bn_id]=[a].[bn_id]) AS thinkphp) AS T1 WHERE (T1.ROW_NUMBER BETWEEN 0 + 1 AND 0 + 10) [ RunTime:0.001963s ]
+---------------------------------------------------------------
+[ 2018-06-08T12:42:32+08:00 ] 0.0.0.0 GET /property/public/admin/worker/index.html
+[ info ] localhost/property/public/admin/worker/index.html [运行时间：0.077205s][吞吐率：12.95req/s] [内存消耗：3,468.21kb] [文件加载：59]
+[ info ] [ LANG ] D:\wamp64\www\property\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'worker',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.7 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://localhost/property/public/admin/worker/index.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'thinkphp_show_page_trace=0|0; UM_distinctid=163d03259c81c2-020bedf9277a45-7c153a4a-15f900-163d03259ca134; CNZZDATA681872=cnzz_eid%3D24272955-1528202079-%26ntime%3D1528358269; PHPSESSID=rp0vtommg20lui3rqpgp7mi037',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Worker->Index[ D:\wamp64\www\property\application\admin\controller\Worker.php ]
+[ info ] [ DB ] INIT sqlsrv
+[ info ] [ VIEW ] D:\wamp64\www\property\public/../application/admin\view\worker\lst.html [ array (
+  0 => 'gl',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000156s ] sqlsrv:Database=property;Server=127.0.0.1,1433
+[ sql ] [ SQL ] SELECT   column_name,   data_type,   column_default,   is_nullable
+        FROM    information_schema.tables AS t
+        JOIN    information_schema.columns AS c
+        ON  t.table_catalog = c.table_catalog
+        AND t.table_schema  = c.table_schema
+        AND t.table_name    = c.table_name
+        WHERE   t.table_name = 'gl' [ RunTime:0.000635s ]
+[ sql ] [ SQL ] SELECT column_name FROM information_schema.key_column_usage WHERE table_name='gl' [ RunTime:0.000399s ]
+[ sql ] [ SQL ] SELECT T1.* FROM (SELECT thinkphp.*, ROW_NUMBER() OVER ( ORDER BY rand()) AS ROW_NUMBER FROM (SELECT  COUNT(*) AS tp_count FROM [gl] [a] LEFT JOIN [bn] [c] ON [c].[bn_id]=[a].[bn_id]) AS thinkphp) AS T1 WHERE (T1.ROW_NUMBER BETWEEN 1 AND 1) [ RunTime:0.000531s ]
+[ sql ] [ SQL ] SELECT T1.* FROM (SELECT thinkphp.*, ROW_NUMBER() OVER ( ORDER BY rand()) AS ROW_NUMBER FROM (SELECT  [a].[gl_user],[a].[gl_id],[a].[gl_pwd],[a].[gl_p],[a].[gl_name],[a].[gl_date],[a].[gl_call],[a].[gl_adress],[a].[gl_note],[a].[time],[c].[bn_name] FROM [gl] [a] LEFT JOIN [bn] [c] ON [c].[bn_id]=[a].[bn_id]) AS thinkphp) AS T1 WHERE (T1.ROW_NUMBER BETWEEN 0 + 1 AND 0 + 10) [ RunTime:0.000725s ]
+---------------------------------------------------------------
+[ 2018-06-08T12:42:33+08:00 ] 0.0.0.0 GET /property/public/admin/department/index.html
+[ info ] localhost/property/public/admin/department/index.html [运行时间：0.129572s][吞吐率：7.72req/s] [内存消耗：3,409.80kb] [文件加载：59]
+[ info ] [ LANG ] D:\wamp64\www\property\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'department',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.7 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://localhost/property/public/admin/worker/index.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'UM_distinctid=163d03259c81c2-020bedf9277a45-7c153a4a-15f900-163d03259ca134; CNZZDATA681872=cnzz_eid%3D24272955-1528202079-%26ntime%3D1528358269; PHPSESSID=rp0vtommg20lui3rqpgp7mi037',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Department->Index[ D:\wamp64\www\property\application\admin\controller\Department.php ]
+[ info ] [ DB ] INIT sqlsrv
+[ info ] [ VIEW ] D:\wamp64\www\property\public/../application/admin\view\department\lst.html [ array (
+  0 => 'adminres',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000200s ] sqlsrv:Database=property;Server=127.0.0.1,1433
+[ sql ] [ SQL ] SELECT   column_name,   data_type,   column_default,   is_nullable
+        FROM    information_schema.tables AS t
+        JOIN    information_schema.columns AS c
+        ON  t.table_catalog = c.table_catalog
+        AND t.table_schema  = c.table_schema
+        AND t.table_name    = c.table_name
+        WHERE   t.table_name = 'bn' [ RunTime:0.014615s ]
+[ sql ] [ SQL ] SELECT column_name FROM information_schema.key_column_usage WHERE table_name='bn' [ RunTime:0.033234s ]
+[ sql ] [ SQL ] SELECT T1.* FROM (SELECT thinkphp.*, ROW_NUMBER() OVER ( ORDER BY rand()) AS ROW_NUMBER FROM (SELECT  COUNT(*) AS tp_count FROM [bn]) AS thinkphp) AS T1 WHERE (T1.ROW_NUMBER BETWEEN 1 AND 1) [ RunTime:0.001374s ]
+[ sql ] [ SQL ] SELECT T1.* FROM (SELECT thinkphp.*, ROW_NUMBER() OVER ( ORDER BY rand()) AS ROW_NUMBER FROM (SELECT  * FROM [bn]) AS thinkphp) AS T1 WHERE (T1.ROW_NUMBER BETWEEN 0 + 1 AND 0 + 10) [ RunTime:0.001317s ]
+---------------------------------------------------------------
+[ 2018-06-08T12:42:37+08:00 ] 0.0.0.0 GET /property/public/admin/information/index.html
+[ info ] localhost/property/public/admin/information/index.html [运行时间：0.139477s][吞吐率：7.17req/s] [内存消耗：3,455.50kb] [文件加载：59]
+[ info ] [ LANG ] D:\wamp64\www\property\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'information',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.7 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://localhost/property/public/admin/department/index.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'UM_distinctid=163d03259c81c2-020bedf9277a45-7c153a4a-15f900-163d03259ca134; CNZZDATA681872=cnzz_eid%3D24272955-1528202079-%26ntime%3D1528358269; PHPSESSID=rp0vtommg20lui3rqpgp7mi037',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Information->Index[ D:\wamp64\www\property\application\admin\controller\Information.php ]
+[ info ] [ DB ] INIT sqlsrv
+[ info ] [ VIEW ] D:\wamp64\www\property\public/../application/admin\view\information\lst.html [ array (
+  0 => 'adminres',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000163s ] sqlsrv:Database=property;Server=127.0.0.1,1433
+[ sql ] [ SQL ] SELECT   column_name,   data_type,   column_default,   is_nullable
+        FROM    information_schema.tables AS t
+        JOIN    information_schema.columns AS c
+        ON  t.table_catalog = c.table_catalog
+        AND t.table_schema  = c.table_schema
+        AND t.table_name    = c.table_name
+        WHERE   t.table_name = 'yz' [ RunTime:0.018336s ]
+[ sql ] [ SQL ] SELECT column_name FROM information_schema.key_column_usage WHERE table_name='yz' [ RunTime:0.039293s ]
+[ sql ] [ SQL ] SELECT T1.* FROM (SELECT thinkphp.*, ROW_NUMBER() OVER ( ORDER BY rand()) AS ROW_NUMBER FROM (SELECT  COUNT(*) AS tp_count FROM [yz]) AS thinkphp) AS T1 WHERE (T1.ROW_NUMBER BETWEEN 1 AND 1) [ RunTime:0.002772s ]
+[ sql ] [ SQL ] SELECT T1.* FROM (SELECT thinkphp.*, ROW_NUMBER() OVER ( ORDER BY rand()) AS ROW_NUMBER FROM (SELECT  * FROM [yz]) AS thinkphp) AS T1 WHERE (T1.ROW_NUMBER BETWEEN 0 + 1 AND 0 + 10) [ RunTime:0.001514s ]
+---------------------------------------------------------------
+[ 2018-06-08T12:42:40+08:00 ] 0.0.0.0 GET /property/public/admin/department/index.html
+[ info ] localhost/property/public/admin/department/index.html [运行时间：0.083674s][吞吐率：11.95req/s] [内存消耗：3,409.83kb] [文件加载：59]
+[ info ] [ LANG ] D:\wamp64\www\property\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'department',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.7 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://localhost/property/public/admin/information/index.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'thinkphp_show_page_trace=0|0; UM_distinctid=163d03259c81c2-020bedf9277a45-7c153a4a-15f900-163d03259ca134; CNZZDATA681872=cnzz_eid%3D24272955-1528202079-%26ntime%3D1528358269; PHPSESSID=rp0vtommg20lui3rqpgp7mi037',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Department->Index[ D:\wamp64\www\property\application\admin\controller\Department.php ]
+[ info ] [ DB ] INIT sqlsrv
+[ info ] [ VIEW ] D:\wamp64\www\property\public/../application/admin\view\department\lst.html [ array (
+  0 => 'adminres',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000158s ] sqlsrv:Database=property;Server=127.0.0.1,1433
+[ sql ] [ SQL ] SELECT   column_name,   data_type,   column_default,   is_nullable
+        FROM    information_schema.tables AS t
+        JOIN    information_schema.columns AS c
+        ON  t.table_catalog = c.table_catalog
+        AND t.table_schema  = c.table_schema
+        AND t.table_name    = c.table_name
+        WHERE   t.table_name = 'bn' [ RunTime:0.000839s ]
+[ sql ] [ SQL ] SELECT column_name FROM information_schema.key_column_usage WHERE table_name='bn' [ RunTime:0.000557s ]
+[ sql ] [ SQL ] SELECT T1.* FROM (SELECT thinkphp.*, ROW_NUMBER() OVER ( ORDER BY rand()) AS ROW_NUMBER FROM (SELECT  COUNT(*) AS tp_count FROM [bn]) AS thinkphp) AS T1 WHERE (T1.ROW_NUMBER BETWEEN 1 AND 1) [ RunTime:0.000893s ]
+[ sql ] [ SQL ] SELECT T1.* FROM (SELECT thinkphp.*, ROW_NUMBER() OVER ( ORDER BY rand()) AS ROW_NUMBER FROM (SELECT  * FROM [bn]) AS thinkphp) AS T1 WHERE (T1.ROW_NUMBER BETWEEN 0 + 1 AND 0 + 10) [ RunTime:0.000658s ]

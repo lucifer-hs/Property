@@ -1,0 +1,170 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Amaze UI Admin index Examples</title>
+    <meta name="description" content="这是一个 index 页面">
+    <meta name="keywords" content="index">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="Cache-Control" content="no-siteapp" />
+    <link rel="icon" type="image/png" href="__PUBLIC__/assets/i/favicon.png">
+    <link rel="apple-touch-icon-precomposed" href="__PUBLIC__/assets/i/app-icon72x72@2x.png">
+    <meta name="apple-mobile-web-app-title" content="Amaze UI" />
+    <link rel="stylesheet" href="__PUBLIC__/assets/css/amazeui.min.css" />
+    <link rel="stylesheet" href="__PUBLIC__/assets/css/admin.css">
+    <link rel="stylesheet" href="__PUBLIC__/assets/css/app.css">
+    <style type="text/css">
+    ul.pagination li{
+        float: left;
+    display: inline-block;
+    }
+        .pagination{text-align:center;margin-top:20px;margin-bottom: 20px;}  
+        .pagination li{margin:0px 10px; border:1px solid #e6e6e6;padding: 3px 8px;display: inline-block; width: 40px}  
+        .pagination .active{background-color: #23ABF0;color: #fff;}  
+        .pagination .disabled{color:#aaa;}  
+</style>
+</head>
+
+<body data-type="generalComponents">
+
+
+   {include file="public/top" /}
+    <div class="tpl-page-container tpl-page-header-fixed">
+
+{include file="public/left" /}
+
+
+        <div class="tpl-content-wrapper">
+            <div class="tpl-content-page-title">
+                业主信息管理文字列表
+            </div>
+            <ol class="am-breadcrumb">
+                <li><a href="#" class="am-icon-home">首页</a></li>
+                <li><a href="#">业主信息管理</a></li>
+                <li class="am-active">文字列表</li>
+            </ol>
+            <div class="tpl-portlet-components">
+                <div class="portlet-title">
+                    <div class="caption font-green bold">
+                        <span class="am-icon-code"></span> 列表
+                    </div>                   
+                </div>
+                <div class="tpl-block">
+                    <div class="am-g">
+                        <div class="am-u-sm-12 am-u-md-6">
+                            <div class="am-btn-toolbar">
+                                <div class="am-btn-group am-btn-group-xs">
+                                    <a href="Information/add.html" class="am-btn am-btn-default am-btn-success"><span class="am-icon-plus"></span> 新增</a>
+                                    <button type="button" class="am-btn am-btn-default am-btn-secondary"><span class="am-icon-save"></span> 保存</button>
+                                    <button type="button" class="am-btn am-btn-default am-btn-warning"><span class="am-icon-archive"></span> 审核</button>
+                                    <button type="button" class="am-btn am-btn-default am-btn-danger"><span class="am-icon-trash-o"></span> 删除</button>
+                                </div>
+                            </div>
+                        </div>
+                        <form action="" method="post">
+                        <div class="am-u-sm-12 am-u-md-3">
+                            <div class="am-form-group">
+                                <select data-am-selected="{btnSize: 'sm'}"name="style" >
+                                  <option value="1">所有类别</option>
+                                  <option value="住宅">住宅</option>
+                                  <option value="商用">商用</option>
+                                  <option value="其它">其它</option>
+                                  
+                                </select>
+                            </div>
+                        </div>
+                        <div class="am-u-sm-12 am-u-md-3">
+                            <div class="am-input-group am-input-group-sm">
+                                <input type="text" class="am-form-field" name="find"  >
+                                <span class="am-input-group-btn">
+                                <button class="am-btn  am-btn-default am-btn-success tpl-am-btn-success am-icon-search" type="submit"></button>
+                              </span>
+                            </div>
+                        </div>
+                        </form>
+                    </div>
+                    <div class="am-g">
+                        <div class="am-u-sm-12">
+                            <form class="am-form" method="post">
+                                 
+                                <table class="am-table am-table-striped am-table-hover table-main">
+                                    <thead>
+                                        <tr>
+                                            <th class="table-check"><input type="checkbox" class="tpl-table-fz-check"></th>
+                                            <th class="table-id">ID</th>
+                                            <th class="table-title">房号</th>
+                                            <th class="table-type">类别</th>
+                                            <th class="table-author am-hide-sm-only">业主</th>
+                                            <th class="table-type">电话</th>
+                                            <th class="table-type">状态</th>
+                                            <th class="table-date am-hide-sm-only">修改日期</th>
+                                            <th class="table-set">操作</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                         {volist name="adminres" id="vo"}
+                                        <tr>
+                                           
+                                            <td><input type="checkbox"></td>
+                                            <td>{$vo.ww_id}</td>
+                                            <td>{$vo.fw_number}</td>
+                                            <td>{$vo.fw_style}</td>
+                                            <td class="am-hide-sm-only">{$vo.yz_name}</td>
+                                            <td>{$vo.yz_phone}</td>
+                                             <td>{$vo.fw_state}</td>
+                                            <td class="am-hide-sm-only">{$vo.time|date="Y-m-d",###}</td>
+                                            <td>
+                                          
+                                                <div class="am-btn-toolbar">
+                                                    <div class="am-btn-group am-btn-group-xs">
+                                                        <a  href="{:url('see',array('id'=>$vo.ww_id))}" class="am-btn am-btn-default am-btn-xs am-text-secondary"><span class="am-icon-pencil-square-o"></span> 查看</a>
+                                                        <a  href="{:url('edit',array('id'=>$vo.ww_id))}"  class="am-btn am-btn-default am-btn-xs am-hide-sm-only"><span class="am-icon-copy"></span> 编辑</a>
+                                                        <a  href="{:url('del',array('id'=>$vo.ww_id))}"  class="am-btn am-btn-default am-btn-xs am-text-danger am-hide-sm-only"><span class="am-icon-trash-o"></span> 删除</a>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                         {/volist}
+                                    </tbody>
+                                </table>
+                                <div class="am-cf">
+
+                                    <div class="am-fr">
+                                       
+                                            {$adminres->render()}
+                                      
+                                    </div>
+                                </div>
+                                <hr>
+                           
+                            </form>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="tpl-alert"></div>
+            </div>
+
+
+
+
+
+
+
+
+
+
+        </div>
+
+    </div>
+
+
+    <script src="__PUBLIC__/assets/js/jquery-2.1.1.js"></script>
+    <script src="__PUBLIC__/assets/js/amazeui.min.js"></script>
+    <script src="__PUBLIC__/assets/js/app.js"></script>
+	
+</body>
+</html>
